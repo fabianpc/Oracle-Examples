@@ -4,7 +4,7 @@ BEGIN
   SELECT COUNT(*)
   INTO c
   FROM user_tables
-  WHERE table_name = 'TABLENAMEA';
+  WHERE table_name = 'TABLENAME_A';
   IF c             = 1 THEN
     EXECUTE immediate 'DROP TABLE TABLENAME_A';
     EXECUTE immediate 'CREATE TABLE TABLENAME_A  
